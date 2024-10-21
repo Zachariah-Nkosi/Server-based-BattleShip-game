@@ -1,0 +1,29 @@
+BattleShip Game Server Started: 2023-05-09 06:20:28.663409
+Play loop started.
+Waiting for client connections.
+Connected Client 0: ('127.0.0.1', 59902)
+Connected Client 1: ('127.0.0.1', 59903)
+Sent Message Client 1: new game,C
+Sent Message Client 0: new game,G
+Sent Message Client 1: your move
+Sent Message Client 0: opponents move
+Received Message Client 1: 0,0
+Sent Message Client 1: valid move,C,0,0,0,0
+Sent Message Client 0: valid move,C,0,0,0,0
+Sent Message Client 0: your move
+Sent Message Client 1: opponents move
+Traceback (most recent call last):
+  File "C:\Users\Zachariah\OneDrive\Desktop\NKSZAK005 _2_ (1)\NKSZAK005\BattleShipGameServer.py", line 81, in play_loop
+    move = self.receive_message(self.current_player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Zachariah\OneDrive\Desktop\NKSZAK005 _2_ (1)\NKSZAK005\GameServer.py", line 35, in receive_message
+    msg = self.clients[i][0].recv(BUFFER_SIZE).decode().strip()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+ERROR:[WinError 10054] An existing connection was forcibly closed by the remote host
+
+Game Server is being restarted.
+
+Play loop started.
+Waiting for client connections.
